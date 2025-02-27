@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import routes from './routes/Index';
 import { Routes } from 'react-router-dom';
 

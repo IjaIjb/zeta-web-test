@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Footer from '../../component/Footer'
 import Navbar from '../../component/Navbar'
 import { ToastContainer, toast } from "react-toastify";
@@ -32,7 +32,7 @@ const Partner = () => {
         e.preventDefault();
         setLoader(true);
       
-        const partnerType = "investor"; // Set partnerType here
+        // const partnerType = "investor"; // Set partnerType here
 
         // Map the form data to the keys expected by the backend
         const payload = {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { UserApis } from '../../component/api/userApis';
 import AdminSidebar from './AdminSidebar';
 import UserNavbar from './UserNavbar';
+import LoadingSpinner from '../../component/UI/LoadingSpinner';
 
 const Partners = () => {
 
@@ -53,6 +54,8 @@ const Partners = () => {
                 <th className="p-2 border">Created At</th>
               </tr>
             </thead>
+            {loader ? <LoadingSpinner /> : (
+
             <tbody>
               {data?.data?.map((partner:any) => (
                 <tr key={partner._id} className="border-t">
@@ -75,6 +78,7 @@ const Partners = () => {
                 </tr>
               ))}
             </tbody>
+            )}
           </table>
         </div>
 

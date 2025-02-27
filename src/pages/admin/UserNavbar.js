@@ -1,6 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Dispatch } from "redux";
+// import PropTypes from "prop-types";
+// import { Dispatch } from "redux";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ title }) {

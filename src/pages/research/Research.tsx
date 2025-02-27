@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
 import FocusArea from "./FocusArea";
 import Footer from "../../component/Footer";
-import PicturesAlone from "../home/PicturesAlone";
+// import PicturesAlone from "../home/PicturesAlone";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import ResearchServices from "./ResearchServices";

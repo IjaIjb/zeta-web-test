@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Navbar from "../../component/Navbar";
 import CareerChoice from "./CareerChoice";
-import PicturesAlone from "../home/PicturesAlone";
-import LatestNews from "../home/LatestNews";
+// import PicturesAlone from "../home/PicturesAlone";
+// import LatestNews from "../home/LatestNews";
 import Footer from "../../component/Footer";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";

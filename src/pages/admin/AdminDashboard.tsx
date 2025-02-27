@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import UserNavbar from "./UserNavbar";
 import AdminSidebar from './AdminSidebar';
 import { UserApis } from '../../component/api/userApis';
+import LoadingSpinner from '../../component/UI/LoadingSpinner';
 const AdminDashboard = () => {
 
       const [contact, setContact] = useState<any>([]);
@@ -89,9 +90,12 @@ const AdminDashboard = () => {
           <div className="bg-[#ffffff] border border-[#D8D8D8] rounded-lg flex justify-between px-4 py-4">
             <div>
               <h3 className=" text-base text-black">Total Contacts</h3>
+              {loader ? <LoadingSpinner /> : (
+           
               <p className="text-3xl  text-black">
  {contact?.data?.length ?? 0}
               </p>
+              )}
             </div>
            
 
@@ -100,10 +104,13 @@ const AdminDashboard = () => {
           <div className="bg-[#ffffff] border border-[#D8D8D8] rounded-lg flex justify-between px-4 py-4">
             <div>
               <h3 className=" text-base text-black">Total Partners</h3>
+              {loader ? <LoadingSpinner /> : (
+              
               <p className="text-3xl  text-black">
               {partners?.data?.length ?? 0}
 
               </p>
+              )}
             </div>
           
 
@@ -111,10 +118,13 @@ const AdminDashboard = () => {
           <div className="bg-[#ffffff] border border-[#D8D8D8] rounded-lg flex justify-between px-4 py-4">
             <div>
               <h3 className=" text-base text-black">Waiters</h3>
+              {loader ? <LoadingSpinner /> : (
+             
               <p className="text-3xl  text-black">
               {waiters?.data?.length ?? 0}
 
               </p>
+              )}
             </div>
         
 

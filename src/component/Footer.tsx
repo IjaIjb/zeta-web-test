@@ -216,7 +216,7 @@ const Footer = () => {
                   3401 N. Miami, Ave. Ste 230
                 </div> */}
                 <div className="flex items-center gap-4 mt-4">
-                  <a href="https://x.com/zetakree" target="_blank">
+                  <a href="https://x.com/zetakree" rel="noreferrer" target="_blank">
                     <svg
                       width="100%"
                       height="100%"
@@ -233,6 +233,7 @@ const Footer = () => {
                   <div className="block">
                     <a
                       href="https://www.tiktok.com/@zekakree?_t=ZM-8tKToMkzUow&_r=1"
+                      rel="noreferrer"
                       target="_blank"
                     >
                       <svg
@@ -278,7 +279,7 @@ const Footer = () => {
                     </svg>
                   </div> */}
 
-                  <a href="https://web.facebook.com/zetakree" target="_blank">
+                  <a href="https://web.facebook.com/zetakree" rel="noreferrer" target="_blank">
                     <svg
                       width="100%"
                       height="100%"
@@ -296,6 +297,7 @@ const Footer = () => {
                   <div className="block">
                     <a
                       href="https://www.instagram.com/zetakree_?igsh=MTg0ZmtjZnRtb2JsdA%3D%3D&utm_source=qr"
+                      rel="noreferrer"
                       target="_blank"
                     >
                       <svg
@@ -315,6 +317,7 @@ const Footer = () => {
 
                   <div className=" block">
                     <a
+                    rel="noreferrer"
                       href="https://www.linkedin.com/company/zetakree"
                       target="_blank"
                     >
@@ -439,6 +442,17 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
       </div>
     </div>
   );

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import AdminSidebar from './AdminSidebar'
 import UserNavbar from './UserNavbar'
 import { UserApis } from '../../component/api/userApis';
-import axios from 'axios';
+import LoadingSpinner from '../../component/UI/LoadingSpinner';
+// import axios from 'axios';
 
 const ContactList = () => {
 
@@ -55,6 +56,8 @@ const ContactList = () => {
             <th className="py-2 px-4 text-left">Created At</th>
           </tr>
         </thead>
+        {loader ? <LoadingSpinner /> : (
+
         <tbody>
           {data?.data?.map((contact:any) => (
             <tr key={contact._id} className="border-b hover:bg-gray-50">
@@ -67,6 +70,7 @@ const ContactList = () => {
             </tr>
           ))}
         </tbody>
+        )}
       </table>
     </div>
 

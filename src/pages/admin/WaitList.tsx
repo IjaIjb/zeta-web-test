@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { UserApis } from '../../component/api/userApis';
 import AdminSidebar from './AdminSidebar';
 import UserNavbar from './UserNavbar';
+import LoadingSpinner from '../../component/UI/LoadingSpinner';
 
 const WaitList = () => {
     
@@ -49,6 +50,8 @@ const WaitList = () => {
             <th className="border px-4 py-2">Created At</th>
           </tr>
         </thead>
+        {loader ? <LoadingSpinner /> : (
+
         <tbody>
           {data?.data?.map((contact:any) => (
             <tr key={contact._id} className="border-t">
@@ -57,6 +60,7 @@ const WaitList = () => {
             </tr>
           ))}
         </tbody>
+        )}
       </table>
     </div>
    </div>

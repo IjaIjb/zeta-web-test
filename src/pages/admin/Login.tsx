@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { UserApis } from '../../component/api/userApis';
@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 import LoadingSpinner from '../../component/UI/LoadingSpinner';
 
 const Login = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [password, setPassword] = useState("");
     const [show, setShow] = useState(false);
     const navigate = useNavigate();
   const [loader, setLoader] = useState(false);

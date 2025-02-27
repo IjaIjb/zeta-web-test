@@ -4,7 +4,7 @@ import Solutions from "./Solutions";
 import Footer from "../../component/Footer";
 import { useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
-import ComprehensiveHealth from "./ComprehensiveHealth";
+// import ComprehensiveHealth from "./ComprehensiveHealth";
 import Telehealth from "./Telehealth";
 import { Link } from "react-router-dom";
 

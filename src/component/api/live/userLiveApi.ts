@@ -2,9 +2,6 @@ import { AxiosGlobal } from "../shared/axios";
 import{ AxiosPromise} from "axios";
 import configs from "../../../config";
 import { store } from "../../../store/store";
-import qs from "qs";
-
-
 
 export class UserLiveApis extends AxiosGlobal{
     

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 const AppFeatures = () => {
   // const features = [
   //   {
@@ -318,57 +318,57 @@ const AppFeatures = () => {
   //     ]
   //   },
   // ];
-  const [formData, setFormData] = useState({
-    email: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   email: "",
+  // });
 
   // Handle input changes
-  const handleChange = (e: any) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  // const handleChange = (e: any) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
 
   // Handle form submission
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: any) => {
+  //   e.preventDefault();
 
-    try {
-      const response = await fetch(
-        "https://zeta-nvjw.onrender.com/api/submissions",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+  //   try {
+  //     const response = await fetch(
+  //       "https://zeta-nvjw.onrender.com/api/submissions",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(formData),
+  //       }
+  //     );
 
-      if (response.ok) {
-        toast.success("Form submitted successfully!");
+  //     if (response.ok) {
+  //       toast.success("Form submitted successfully!");
 
-        // alert('Form submitted successfully!');
-        setFormData({
-          // last_name: '',
-          email: "",
-          // phone: '',
-          // message: '',
-        });
-      } else {
-        toast.error("Failed to submit form");
+  //       // alert('Form submitted successfully!');
+  //       setFormData({
+  //         // last_name: '',
+  //         email: "",
+  //         // phone: '',
+  //         // message: '',
+  //       });
+  //     } else {
+  //       toast.error("Failed to submit form");
 
-        // alert('Failed to submit form');
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      toast.error("An error occurred while submitting the form");
+  //       // alert('Failed to submit form');
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //     toast.error("An error occurred while submitting the form");
 
-      // alert('An error occurred while submitting the form');
-    }
-  };
+  //     // alert('An error occurred while submitting the form');
+  //   }
+  // };
 
   const features = [
     {
@@ -634,6 +634,17 @@ const AppFeatures = () => {
         </div> */}
         <Footer />
       </div>
+      {/* <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          /> */}
     </div>
   );
 };

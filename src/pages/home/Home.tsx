@@ -7,7 +7,7 @@ import Secure from "./Secure";
 import FutureProof from "./FutureProof";
 import ExploreEco from "./ExploreEco";
 import PicturesAlone from "./PicturesAlone";
-import LatestNews from "./LatestNews";
+// import LatestNews from "./LatestNews";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
