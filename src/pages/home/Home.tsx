@@ -86,12 +86,12 @@ const Home = () => {
 </div> */}
                     <div className="flex justify-center mt-2">
                       <h3 className="text-[#737373] z-10 max-w-[800px] text-center text-[19px] md:text-[25px] ">
-                        Welcome to Zetakree Biotech, where science, AI, and
+                        {/* Welcome to Zetakree Biotech, where science, AI, and
                         innovation converge to redefine longevity and improve
-                        lives.
-                      {/* For centuries, humanity accepted aging as inevitable. But today, we stand
+                        lives. */}
+                      For centuries, humanity accepted aging as inevitable. But today, we stand
 at the edge of immortality. The first humans to live beyond 150 are among us. Will
-you be one of them? */}
+you be one of them?
                       </h3>
                     </div>
 
