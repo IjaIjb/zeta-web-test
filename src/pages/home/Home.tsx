@@ -118,7 +118,7 @@ you be one of them?
 
                         <Link
                           to={"/research"}
-                          className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]"
+                          className="flex lg:mt-0 mt-3 z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]"
                         >
                          Invest in the Future
                           <svg
@@ -136,7 +136,7 @@ you be one of them?
                         </Link>
                         <Link
                           to={"/research"}
-                          className="flex z-10 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]"
+                          className="flex z-10 lg:mt-0 mt-3 gap-2 justify-center py-2 text-white bg-[#262626] items-center text-[16px] px-3  rounded-[12px]"
                         >
                         Explore the Science
                           <svg
