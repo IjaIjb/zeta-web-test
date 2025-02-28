@@ -566,7 +566,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <Link
+              {/* <Link
                 to={"/market-place"}
                 className="relative"
                 // onMouseOut={() => setToggleColl((prev) => !prev)}
@@ -575,8 +575,18 @@ const Navbar = () => {
                 <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[20px]">
                   Marketplace
                 </h5>
+              </Link> */}
+              <Link
+                to={"/investors"}
+                className="relative"
+                // onMouseOut={() => setToggleColl((prev) => !prev)}
+                // onMouseOver={() => setToggleColl((prev) => !prev)}
+              >
+                <h5 className="text-[#A3A3A3] mt-4 cursor-pointer text-[20px]">
+                  Investors
+                </h5>
               </Link>
-
+              
               <Link
               to={"/app-features"}
                 className="relative"
