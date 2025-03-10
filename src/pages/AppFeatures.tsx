@@ -539,6 +539,283 @@ const AppFeatures = () => {
               Experience cutting-edge health solutions tailored to your needs.
             </p>
           </header>
+
+          <div className="flex justify-center">
+            <div className="max-w-[2000px] lg:px-14 px-3 w-full">
+              <div className="grid lg:grid-cols-12 gap-4 items-center ">
+                <div className="col-span-6">
+                  <img
+                    src="/images/iphone_redHome.svg"
+                    alt="Logos of Ecosystem projects"
+                    loading="lazy"
+                    className="featured_img"
+                  ></img>
+                </div>
+
+                <div className="col-span-6 px-6">
+                  <div className="flex flex-col gap-4">
+                    <h4 className="text-white lg:text-[40px] text-[29px] lg:max-w-[400px] font-semibold">
+                      Welcome To Our ZETA App
+                    </h4>
+                    <h4 className="text-gray-300 text-[19px] lg:max-w-[450px]">
+                      ZetaKree is your ultimate health and wellness companion,
+                      revolutionizing the way you care for your body and mind.
+                      Powered by AI, it offers real-time health tracking,
+                      personalized insights, and expert doctor
+                      consultations—right at your fingertips. Whether you need
+                      to monitor vital signs, manage chronic conditions, or
+                      optimize fitness and nutrition, ZetaKree empowers you with
+                      tailored recommendations and actionable insights. Our
+                      reward-based system keeps you motivated, earning tokens
+                      for healthy habits. With advanced diagnostics, skincare
+                      AI, and seamless teleconsultations, ZetaKree is more than
+                      an app—it’s your personalized gateway to a longer,
+                      healthier, and more vibrant life.
+                    </h4>
+                    {/* <Link
+                                       to={"/research"}
+                                       className="flex whitespace-nowrap gap-4 z-[1] mt-3 w-fit lg:mt-0 py-3 justify-center bg-[#23F7DD] text-[#080808] items-center text-[16px] px-7  rounded-[12px]"
+                                     >
+                                       Explore Our Innovations
+                                       <svg
+                                         className="w-5 h-5"
+                                         viewBox="0 0 25 16"
+                                         fill="none"
+                                         xmlns="http://www.w3.org/2000/svg"
+                                       >
+                                         <path
+                                           d="M23.6719 8.79688L17.2969 15.1719C16.8281 15.6406 16.125 15.6406 15.7031 15.1719C15.2344 14.75 15.2344 14.0469 15.7031 13.5781L20.1562 9.125H1.125C0.46875 9.125 0 8.65625 0 8C0 7.39062 0.46875 6.875 1.125 6.875H20.1562L15.7031 2.42188C15.2344 2 15.2344 1.29688 15.7031 0.828125C16.125 0.40625 16.8281 0.40625 17.2969 0.828125L23.6719 7.25C24.0938 7.67188 24.0938 8.375 23.6719 8.79688Z"
+                                           fill="currentColor"
+                                         ></path>
+                                       </svg>
+                                     </Link> */}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col lg:flex-row justify-between gap-4 items-center ">
+                <div className="">
+                  <h4 className="text-white lg:text-[40px] mb-12 text-[29px] font-semibold">
+                    Applications Advantages
+                  </h4>
+                  <div className="grid md:grid-cols-2 gap-5 md:gap-10">
+                    <div className="flex gap-4 ">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        01
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h4 className="text-[18px] font-semibold text-white">
+                          Comprehensive Health Management –
+                        </h4>
+                        <h6 className="text-[14px] max-w-[300px] text-gray-300">
+                          Tracks vitals, symptoms, chronic conditions, and
+                          medication schedules, keeping users informed about
+                          their health.
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4 ">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        02
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h4 className="text-[18px] font-semibold text-white">
+                          Seamless Healthcare Connectivity –
+                        </h4>
+                        <h6 className="text-[14px] max-w-[300px] text-gray-300">
+                          Provides doctor matchmaking, teleconsultations,
+                          symptom escalation, Rewards, community engagement and
+                          secure medical history sharing.
+                        </h6>
+                      </div>
+                    </div>
+
+
+                    <div className="flex gap-4 ">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        03
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h4 className="text-[18px] font-semibold text-white">
+                        AI-Powered Personalized Insights –
+
+                        </h4>
+                        <h6 className="text-[14px] max-w-[300px] text-gray-300">
+                        Uses AI for longevity predictions,
+disease risk assessments, genetic
+reports, and tailored health
+recommendations.
+                        </h6>
+                      </div>
+                    </div>
+
+
+
+                    <div className="flex gap-4 ">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                       04
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h4 className="text-[18px] font-semibold text-white">
+                        Convenient Healthcare Access –
+                        </h4>
+                        <h6 className="text-[14px] max-w-[300px] text-gray-300">
+                        Includes a hospital and pharmacy
+locator, live navigation, and a
+health-focused e-commerce
+marketplace.
+                        </h6>
+                      </div>
+                    </div>
+
+
+                    <div className="flex gap-4 ">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                       05
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h4 className="text-[18px] font-semibold text-white">
+                        Integrated Wellness & Fitness Tracking –
+                        </h4>
+                        <h6 className="text-[14px] max-w-[300px] text-gray-300">
+                        Monitors sleep, diet, fitness, and mental
+health, with AI-powered workout and
+stress analysis
+                        </h6>
+                      </div>
+                    </div>
+
+
+                    <div className="flex gap-4 ">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                       06
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h4 className="text-[18px] font-semibold text-white">
+                        Convenient Healthcare Access –
+                        </h4>
+                        <h6 className="text-[14px] max-w-[300px] text-gray-300">
+                        Includes a hospital and pharmacy
+                        locator, live navigation, and a health-focused e-commerce marketplace.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="">
+                  <img
+                    src="/images/iphone_red.svg"
+                    alt="Logos of Ecosystem projects"
+                    loading="lazy"
+                    className="featured_img"
+                  />
+                </div>
+              </div>
+
+              <div className="mb-10">
+              <h4 className="text-white mb-6 lg:text-[40px] text-center mt-8 text-[29px] font-semibold">
+                    Application Flow
+                    </h4>
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+<div>
+<div className="flex gap-4 pb-3">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        01
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h6 className="text-[14px] max-w-[150px] text-gray-300">
+                        Homepage: showing
+health score, Helath
+tracking Cards
+                        </h6>
+                      </div>
+                    </div>
+                    <img
+                    src="/images/nutritionPhone.svg"
+                    alt="Logos of Ecosystem projects"
+                    loading="lazy"
+                    className="featured_img"
+                  />
+
+</div>
+
+<div>
+<div className="flex gap-4 pb-3">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        02
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h6 className="text-[14px] max-w-[220px] text-gray-300">
+                        Connect Tab: showing the
+consult a doctor, community
+forum, hospital locator, and
+anti aging resoruces
+
+                        </h6>
+                      </div>
+                    </div>
+                    <img
+                    src="/images/consult.svg"
+                    alt="Logos of Ecosystem projects"
+                    loading="lazy"
+                    className="featured_img"
+                  />
+
+</div>
+
+<div>
+<div className="flex gap-4 pb-3">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        03
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h6 className="text-[14px] max-w-[220px] text-gray-300">
+                        Eccomerce Marketplace: For
+the purchase of wearables,
+Anti-aging drugs, supplements
+and more.
+
+                        </h6>
+                      </div>
+                    </div>
+                    <img
+                    src="/images/marketPlace.svg"
+                    alt="Logos of Ecosystem projects"
+                    loading="lazy"
+                    className="featured_img"
+                  />
+
+</div>
+
+<div>
+<div className="flex gap-4 pb-3">
+                      <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-400 to-green-500 rounded-full shadow-md text-white font-bold text-sm">
+                        04
+                      </div>
+                      <div className="flex flex-col gap-1">
+                        <h6 className="text-[14px] max-w-[200px] h-[65px] text-gray-300">
+                        Zeta AI, : Vanessa which is
+                        zetakree all knwing AI
+
+                        </h6>
+                      </div>
+                    </div>
+                    <img
+                    src="/images/zetaAi.svg"
+                    alt="Logos of Ecosystem projects"
+                    loading="lazy"
+                    className="featured_img"
+                  />
+
+</div>
+
+
+              </div>
+            </div>
+            </div>
+          </div>
           <main className="max-w-7xl mx-auto grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
               <div

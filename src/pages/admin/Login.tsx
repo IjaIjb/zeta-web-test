@@ -44,7 +44,7 @@ const Login = () => {
     
         UserApis.adminLogin(payload).then(
           (response: AxiosResponse<any>) => {
-            // console.log(response)
+            console.log(response)
             if (response?.data) {
             // console.log(response?.data?.data?.user?.token)
 
@@ -67,8 +67,8 @@ const Login = () => {
           }
         ).catch(function (error) {
           // handle error
-          console.log(error.response.data);
-          toast.error("Offline");
+          console.log(error);
+          toast.error(error.message);
       setLoader(false)
     })
       }

@@ -241,7 +241,7 @@ const About = () => {
                       {/* Tooltip Container */}
                       <div className="relative">
                         <h5 className="text-[20px] font-[600] cursor-pointer">
-                          Jonathan Reekurt
+                        Japhet Jonathan Reekurt
                         </h5>
                         {/* Tooltip */}
                         {/* <div className="absolute bottom-full left-[110px] transform -translate-x-1/2 mb-2 w-[300px] bg-black text-white text-sm rounded-md shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
