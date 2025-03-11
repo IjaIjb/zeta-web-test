@@ -52,8 +52,8 @@ const Partner = () => {
           const response = await UserApis.registerPartner(formData.partnerType, payload);
           // console.log("Contact created", response.data);
           if (response?.data) {
-            toast.success("Form submitted successfully!");
-            setFormData({
+                  toast.success(response?.data?.message || "Form submitted successfully!");
+           setFormData({
               businessName: "",
               email: "",
               phoneNumber: "",

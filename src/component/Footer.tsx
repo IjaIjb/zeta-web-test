@@ -35,16 +35,16 @@ const Footer = () => {
       const response = await UserApis.registerWaitlist(payload);
       console.log("Contact created", response.data);
       if (response?.data) {
-        toast.success("Form submitted successfully!");
+        toast.success(response?.data?.message || "Form submitted successfully!");
         setFormData({
           email: ""
         });
       } else {
         toast.error("Failed to submit form");
       }
-    } catch (error) {
+    } catch (error:any) {
       console.error("Error creating contact", error);
-      toast.error("An error occurred while submitting the form");
+      toast.error(error?.response?.data?.message || "An error occurred while submitting the form");
     } finally {
       setLoader(false);
     }

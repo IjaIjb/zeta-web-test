@@ -4,7 +4,7 @@ import AdminSidebar from './AdminSidebar';
 import UserNavbar from './UserNavbar';
 import LoadingSpinner from '../../component/UI/LoadingSpinner';
 
-const Partners = () => {
+const Investors = () => {
 
          const [data, setData] = useState<any>([]);
             const [loader, setLoader] = useState(false);
@@ -41,7 +41,7 @@ const Partners = () => {
    <UserNavbar />
 
    <div className="overflow-x-auto p-6 mt-10">
-   <h1 className="text-xl font-bold mb-4">Partners list</h1>
+   <h1 className="text-xl font-bold mb-4">Investors list</h1>
           <table className="w-full text-sm text-left rtl:text-right text-gray-500">
             <thead className="text-xs text-gray-700 rounded-[6px] px-3 bg-[#EFF1F3]">
               <tr className="bg-gray-200 text-left">
@@ -58,7 +58,7 @@ const Partners = () => {
 
             <tbody>
           {data?.data
-  ?.filter((partner: any) => partner.partnerType === "partner")
+  ?.filter((partner: any) => partner.partnerType === "investor")
   .map((partner: any) => (
     <tr key={partner._id} className="border-t">
       <td className="p-2 border">{partner.businessName}</td>
@@ -90,4 +90,4 @@ const Partners = () => {
   )
 }
 
-export default Partners
+export default Investors

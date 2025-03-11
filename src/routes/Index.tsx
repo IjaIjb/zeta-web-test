@@ -14,6 +14,7 @@ const AdminDashboardPage = lazy(() => import("../pages/admin/AdminDashboard"));
 const AdminContactListPage = lazy(() => import("../pages/admin/ContactList"));
 const AdminWaitListPage = lazy(() => import("../pages/admin/WaitList"));
 const AdminPartnersPage = lazy(() => import("../pages/admin/Partners"));
+const AdminInvestorsPage = lazy(() => import("../pages/admin/Investors"));
 const LoginPage = lazy(() => import("../pages/admin/Login"));
 const InvestorsPage = lazy(() => import("../pages/investors/Investors"));
 
@@ -81,6 +82,10 @@ const routes = [
     {
       path: "/admin/partners",
       component: AdminPartnersPage,
+    },
+    {
+      path: "/admin/investors",
+      component: AdminInvestorsPage,
     },
     {
       path: "/login",

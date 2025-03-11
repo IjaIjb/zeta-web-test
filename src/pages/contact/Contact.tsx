@@ -60,8 +60,8 @@ const Contact = () => {
       const response = await UserApis.createContact(payload);
       // console.log("Contact created", response.data);
       if (response?.data) {
-        toast.success("Form submitted successfully!");
-    setLoader(false);
+          toast.success(response?.data?.message || "Form submitted successfully!");
+  setLoader(false);
 
         setFormData({
           firstName: "",
@@ -73,9 +73,10 @@ const Contact = () => {
       } else {
         toast.error("Failed to submit form");
       }
-    } catch (error) {
+    } catch (error:any) {
       console.error("Error creating contact", error);
-      toast.error("An error occurred while submitting the form");
+          toast.error(error?.response?.data?.message || "An error occurred while submitting the form");
+  
     } finally {
       setLoader(false);
     }

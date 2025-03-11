@@ -164,6 +164,27 @@ const AdminSidebar = () => {
            Partners
               </NavLink>
             </li> 
+
+            <li className="items-center mt-2">
+              <NavLink
+            onClick={() => setCollapseShow("hidden")}
+            style={{
+              backgroundColor: (window.location.href.indexOf("/admin/investors") !== -1
+                ? "rgba(255, 255, 255, 0.1)"
+                : "text-black hover:text-blueGray-500")
+            }}
+                className={
+                  "text-sm  py-2 pl-3 font-light flex  " +
+                  (window.location.href.indexOf("/admin/partners") !== -1
+                    ? "text-white hover:text-lightBlue-600"
+                    : "text-white hover:text-blueGray-500")
+                }
+                to="/admin/investors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className="mr-2" viewBox="0 0 24 24"><path fill="white" d="M13 9V3h8v6h-8ZM3 13V3h8v10H3Zm10 8V11h8v10h-8ZM3 21v-6h8v6H3Zm2-10h4V5H5v6Zm10 8h4v-6h-4v6Zm0-12h4V5h-4v2ZM5 19h4v-2H5v2Zm4-8Zm6-4Zm0 6Zm-6 4Z"/></svg>
+          Investors
+              </NavLink>
+            </li> 
             {/* <li className="items-center mt-2">
               <NavLink
                 style={({ isActive }) =>
